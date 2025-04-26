@@ -19,16 +19,43 @@
         .botao3{
             background-color: rgba(255, 77, 0, 0.635);
         }
+        .square {
+            height: auto;
+            width: 500px;
+            background-color: rgb(255, 255, 255);
+        }
+        .container{
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            border: 5px solid black;
+            width: fit-content;
+            margin: 0 auto;
+        }
+        .border {
+            border-bottom: 2px solid black;
+            display: inline-block;
+        }
+        .border2 {
+            border-bottom: 1px solid black;
+            display: inline-block;
+        }
+        .font-size{
+            font-size: 40px;
+        }
     </style>
 </head>
 <body>
-    <h1>Click</h1>
-    <h2>O jogo de Clicar</h2>
-    <p id="contador">0</p>
-    <p><button onclick="Clicar()">Clique no botão para ganhar pontos</button></p>
-    <p><button class="botao1" onclick="Clicar2()">Clique no botão para ganhar mais 1 por clique <br>(você precisa de 20 pontos para ativar essa opção)</button></p>
-    <p><button class="botao2" onclick="Clicar3()">Clique no botão para ganhar ainda mais 1 por clique <br>(você precisa de 100 pontos para ativar essa opção)</button></p>
-    <p><button class="botao3" onclick="Clicar4()">Clique no botão para ganhar uma supresa<br> (você precisa de 400 pontos para ativar essa opção)</button></p>
-
+    <h1 class="border">Click</h1><br>
+    <h2 class="border2">O jogo de Clicar</h2>
+    <div class="container">
+        <div class="square">
+            <p class="font-size" id="contador">0</p>
+            <p><button onclick="Clicar()">Clique no botão para ganhar pontos</button></p>
+            <p><button class="botao1" onclick="Clicar2()">Clique no botão para ganhar mais 1 por clique <br>(você precisa de 20 pontos para ativar essa opção)</button></p>
+            <p><button class="botao2" onclick="Clicar3()">Clique no botão para ganhar ainda mais 1 por clique <br>(você precisa de 100 pontos para ativar essa opção)</button></p>
+            <p><button class="botao3" onclick="Clicar4()">Clique no botão para ganhar uma supresa<br> (você precisa de 400 pontos para ativar essa opção)</button></p>
+            </div>
+    </div>
 </body>
 </html>
